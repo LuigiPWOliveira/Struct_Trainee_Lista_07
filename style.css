@@ -1,0 +1,330 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100vw !important;
+    position: fixed;
+    margin: 0;
+    z-index: 1;
+    max-width: 100vw;
+}
+
+nav .nav-top{
+    width: 100vw;
+    height: 3rem;
+    display: flex;
+    background-color:rgba(151, 151, 151, 0.6);
+}
+
+nav a{
+    text-decoration: none;
+    color: inherit;
+    height: auto;
+}
+
+.nav-top a{
+    margin: 0 auto;
+    position: relative;
+    line-height: 3rem;
+    vertical-align: middle;
+    text-decoration: underline 1px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(24, 27,33);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.nav-top a:hover{
+    cursor: pointer;
+    text-decoration: underline 2px;
+}
+
+nav .nav-bottom{
+    margin: 1rem 2.5rem;
+    background: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .nav-list a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin: 0;
+}
+
+nav .nav-list a:hover{
+    cursor: pointer;
+    background-color: rgba(230, 230, 230, 0.1);
+    border-radius: 15px;
+    transition: 600ms ease;
+}
+
+nav img{
+    margin: -1rem;
+    height: 3rem;
+    width: auto;
+}
+
+nav .nav-small{
+    display: none;
+}
+
+@media only screen and (max-width: 1000px){
+    .nav-middle, .nav-right{
+        display: none;
+    }
+
+    nav .nav-small{
+        display: inherit;
+    }
+
+    nav .nav-small{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 5px 10px;
+        margin: 0;
+        background-color: rgba(211, 210, 210, 0.1);
+        border-radius: 5px;
+    }
+}
+
+.product{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+#demons_souls{
+    position: relative;
+    background-image: url(./img/demons_souls_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+#darksouls-1{
+    position: relative;
+    background-image: url(./img/dark_souls_1_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+#darksouls-2{
+    position: relative;
+    background-image: url(./img/dark_souls_2_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+#darksouls-3{
+    position: relative;
+    background-image: url(./img/dark_souls_3_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+#bloodborne{
+    position: relative;
+    background-image: url(./img/bloodborne_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+#sekiro{
+    position: relative;
+    background-image: url(./img/sekiro_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+#elden-ring{
+    position: relative;
+    background-image: url(./img/elden_ring_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    #demons_souls{
+        background-image: url(./img/demons_souls_background_mobile.png);
+        background-size: 100vw;
+    }
+    #darksouls-1{
+        background-image: url(./img/dark_souls_1_background_mobile.png);
+        background-size: 100vw;
+    }
+    #darksouls-2{
+        background-image: url(./img/dark_souls_2_background_mobile.png);
+        background-size: 100vw;
+    }
+    #darksouls-3{
+        background-image: url(./img/dark_souls_3_background_mobile.png);
+        background-size: 100vw;
+    }
+    #bloodborne{
+        background-image: url(./img/bloodborne_background_mobile.png);
+        background-size: 100vw;
+    }
+    #sekiro{
+        background-image: url(./img/sekiro_background_mobile.png);
+        background-size: 100vw;
+    }
+    #elden-ring{
+        background-image: url(./img/elden_ring_background_mobile.png);
+        background-size: 100vw;
+    }
+}
+
+.product .content{
+    position: relative;
+    display: block;
+    min-height: 100%;
+    min-width: 256px;
+    width: 610px;
+}
+
+.product .top{
+    margin-top: 7.5rem;
+}
+
+.product h1{
+    margin: 0;
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.product h2{
+    margin-top: -0.5rem;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 48px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product .bottom{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    min-height: 40px;
+    min-width: 256px;
+    width: 550px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 5.4rem;
+}
+
+.product .bottom button{
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(23, 26, 32, 0.8);
+    color:rgb(255, 255, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    width: 256px;
+    height: 40px;
+    align-content: center;
+}
+
+.product .bottom button:hover{
+    cursor: pointer;
+}
+
+.product .bottom .white{
+    background-color: rgb(255, 255, 255, 0.65);
+    color: rgb(50, 57, 65);
+}
+
+
+@media only screen and (max-width: 550px){
+    .product .bottom{
+        width: auto;
+        justify-content: center;
+    }
+    .product .bottom button{
+        min-width: 90%;
+        margin-top: 1rem;
+    }
+}
+
+#elden-ring .bottom{
+    justify-content: center;
+    width: 100%;
+}
+
+footer{
+    box-sizing: border-box;
+    position: absolute;
+    z-index: visble;
+    width: 100%;
+    height: fit-content;
+    bottom: 0;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer .footer-content a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1.5rem;
+}
+
+@media only screen and (max-width: 550px){
+    footer .footer-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-hide{
+        display: none;
+    }
+
+    footer .footer-content a{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #elden-ring .bottom{
+        margin-bottom: 8rem;
+    }
+}
+
